@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/img/kr.ico" type="image/x-icon">
+
+    <title>Katheryne Ramirez</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/index.html"><img src="/img/kr.png" alt=""></a></div>
+        <div class="about">
+            <a href="about.html">about</a>
+            <a href="projects.html">projects</a>
+            <a href="/index.html#contact">contact</a>
+        </div>
+        <nav class="nav-bar">
+            <a href="https://www.linkedin.com/in/katheryne-ramirez-80a2a2304/">
+            <i class='bx bxl-linkedin'></i></a>
+            <a href="#">
+              <i class="bx bxl-telegram"></i>
+            </a>
+            <a href="https://github.com/Katheryner">
+              <i class='bx bxl-github'></i>
+            </a>
+          </nav>
+    </header>
+    
+
+        <div class="i">
+          <div class="me">
+              <h1>about</h1>
+              <h3>I'm a software developer<br>
+                  living in Rionegro, Colombia.</h3>
+              
+              <br>
+              <p>I enjoy solving problems, and expressing them <br>in a creative way. I am also a lover of dancing,
+                  <br>music
+                  and nature.
+              </p>
+          </div>
+          <div class="foto">
+            <img src="/img/programa.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="hr"></div>
+        <section>
+            <div class="experience">
+                <div>
+                    <h2>Front-end</h2>
+                    <br>
+                    <p>HTML / CSS</p>
+                </div>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div>
+                    <h2>Backend</h2>
+                    <br>
+                    <p>Phyton</p>
+                    <br>
+                    <p>Javascript</p>
+                    <br>
+                    <p>Java</p>
+                    <br>
+                    <p>MYSQL</p>
+                    <br>
+                    <p>Spring Boot</p>
+                </div>
+
+            </div>
+        </section>
+        <div class="hr"></div>
+        <div class="story">
+          <div class="story__about">
+              <h3 class="title">My Story</h3>
+              <div class="description"> 
+                <p>
+                    Hello! I'm Katheryne, a passionate developer and integral cosmetologist with big dreams in the world of programming. Let me share a bit about me.
+                </p>
+
+                <h3>Origins</h3>
+                <p>
+                I was born and raised in the beautiful city of Rionegro, surrounded by breathtaking nature and a vibrant culture. From a young age, I was drawn to art in all its forms, from dance to painting. I also loved sports and found joy and discipline in every challenge.
+                </p>
+                <h3> 
+                    Passion for Art and Personal Care
+                </h3>
+                <p>
+                    Since I was little, I've been passionate about beauty, as well as art. Fascinated by the ability to elevate beauty and promote wellness, I immersed myself in the world of comprehensive aesthetics. I've improved my skills in various areas, including cosmetics, nutrition, and personal care.
+                </p>
+                <h3>
+                    The Journey to Excellence in Software Development
+                </h3>
+                <p>
+                    Despite my love for cosmetology, I've always had a natural curiosity for technology and computers. I decided to follow my passion and venture into the world of programming with the firm goal of becoming the best software developer. This journey has been challenging but incredibly rewarding. I'm excited to learn and grow in this fascinating field that combines my creativity with my passion for solving problems.
+                </p>
+                <h3>
+                    A Bright Future
+                </h3>
+                <p>
+                    Looking ahead, I'm full of enthusiasm for the opportunities to come. I aspire to become an exceptional software developer, creating innovative solutions that positively impact the world around me.</p>
+                </p>
+              </div>
+              <button class="show" id="show_more" data-arrow="↓"> Read More</button>
+            </div>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-slide">
+                        <img src="/img/mia.jpg" alt="Image 1">
+                      </div>
+                  <div class="carousel-slide">
+                    <img src="/img/IMG_1253.jpg" alt="Image 1">
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="/img/mia2.jpg" alt="Image 1">
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="/img/IMG_1266.jpg" alt="Image 2">
+                  </div>
+                  <div class="carousel-slide">
+                    <img src="/img/fotomia.jpg" alt="Image 3">
+                  </div>
+                  
+                </div>
+                <button class="prev" onclick="prevSlide()"> &#10094;</button>
+                <button class="next" onclick="nextSlide()"> &#10095;</button>
+              </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Frontend', 'Backend', 'Ux/iu'],
+                datasets: [{
+                    label: 'Frontend',
+                    data: [35, 45, 20],
+                    backgroundColor: ["#666666", "#000", "#fff"],
+
+                }
+                ]
+            },
+            options: {
+                responsive: true,
+            }
+        });
+    </script>
+    
+    <script src="/js/about.js"></script>
+</body>
+
+</html>

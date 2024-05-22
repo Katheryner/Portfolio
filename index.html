@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <title>Katheryne Ramirez</title>
+    <link rel="shortcut icon" href="/img/kr.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="/img/kr.png" alt="" /></div>
+      <div class="about">
+        <a href="html/about.html">about</a>
+        <a href="/html/projects.html">projects</a>
+        <a href="#contact">contact</a>
+      </div>
+      <nav class="nav-bar">
+        <a href="https://www.linkedin.com/in/katheryne-ramirez-80a2a2304/">
+        <i class='bx bxl-linkedin'></i></a>
+        <a href="#">
+          <i class="bx bxl-telegram"></i>
+        </a>
+        <a href="https://github.com/Katheryner">
+          <i class='bx bxl-github'></i>
+        </a>
+      </nav>
+    </header>
+    <div class="avatar">
+      <div class="avatar-content">
+        <div class="backcoder">
+          <h1 class="coder"> < coder ></h1>
+          <h2 class="back">backend_developer</h2>
+        </div>
+        <div class="fotoavatar">
+          <img
+            id="foto"
+            src="/img/avatar.png"
+            alt=""
+          />
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <section class="work-content">
+      <div class="work">
+        <h3>Some of my latest work</h3>
+        <div class="last_work">
+          <div class="box-gallery">
+          <video src="/img/store.webm" id="colvideo" autoplay loop>
+          </video>
+          <h2>Store</h2>
+        </div>
+        <div class="box-gallery">
+          <video id="colvideo" src="/img/hogwarts.webm" muted autoplay loop>
+          </video>
+          <h2>Hogwarts</h2>
+        </div>
+      </div>
+    </section>
+    <div class="hr"></div>
+    <div class="lenguage">
+      <i class="devicon-python-plain-wordmark skill"></i>
+      <i class="devicon-javascript-plain skill"></i>
+      <i class="devicon-java-plain-wordmark skill"></i>
+      <i class="devicon-html5-plain-wordmark skill"></i>
+      <i class="devicon-css3-plain-wordmark skill"></i>
+      <i class="devicon-mysql-plain-wordmark skill"></i>
+      <i class="devicon-spring-original-wordmark skill"></i>
+    </div>
+    <div class="hr"></div>
+
+    <section class="contact" id="contact">
+      <h3>Contact</h3>
+      <form class="datos" action="https://formspree.io/f/xqkrgrqg"
+      method="POST">
+        <h4>Send me a message</h4>
+        <div class="nameContact">
+          <input type="text" id="name" placeholder="name" />
+          <input type="text" id="phone" placeholder="phone" />
+        </div>
+        <input type="email" name="email" id="email" placeholder="email" />
+        <textarea name="message" type="text" rows="5" placeholder="message" id="mensaje"></textarea>
+        <button class="send">Send</button>
+      </form>
+    </section>
+    <div class="hr"></div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

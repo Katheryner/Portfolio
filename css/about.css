@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #fff;
+  --secundary: #121111;
+  --terciary: #413f3f;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.i {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 13vh 20% 1rem;
+}
+
+.about {
+  gap: 30px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 1s;
+}
+
+a:hover {
+  color: var(--terciary);
+}
+
+.nav-bar {
+  font-size: 30px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.nav-bar a:hover {
+  font-size: 35px;
+}
+
+.me {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fotos {
+  width: 30%;
+}
+
+h1 {
+  font-size: calc(4vh + 3vw);
+  color: var(--terciary);
+  letter-spacing: 2px;
+}
+h2 {
+  letter-spacing: 3px;
+}
+h3 {
+  padding: 1rem 0;
+  font-size: 20px;
+  color: #666666;
+  letter-spacing: 2px;
+}
+
+.me p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #2a2929;
+}
+
+.experience {
+  padding: 0 20%;
+  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 500px;
+  background: #f4f4f4;
+}
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foto img {
+  width: 100%;
+  height: 450px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.story {
+  transition: height 1s ease;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 3% 20%;
+  max-height: 70vh;
+  overflow-y: hidden;
+}
+
+.story .title {
+  padding-bottom: 30px;
+  font-weight: bolder;
+  font-size: 4rem;
+  letter-spacing: 20px;
+}
+
+.story p {
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.story__about {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: auto;
+  width: 60%;
+}
+
+.hr {
+  position: relative;
+}
+
+.hr::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  box-shadow: 1px 5px 5px #e3e3e3;
+  z-index: 2;
+}
+
+.carousel {
+  position: relative;
+  height: 40vh;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  flex: 1 0 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.show {
+  scroll-behavior: smooth;
+  background-color: #868686;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 10%;
+  background: linear-gradient(transparent, rgb(255, 255, 255) 30%);
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+}
+
+.full_story {
+  max-height: max-content;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.show::after {
+  position: relative;
+  content: attr(data-arrow);
+}
+
+@media (orientation: portrait) {
+  .i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    gap: 1rem;
+    padding: 5%;
+    margin-top: 12vh;
+  }
+  .me {
+    width: 100%;
+  }
+  .i .foto img {
+    display: block;
+    height: unset;
+    width: 300px;
+    aspect-ratio: 1/1;
+  }
+  .experience {
+    flex-direction: column;
+    height: auto;
+  }
+  .experience div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 4%;
+  }
+}
